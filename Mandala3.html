@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANDALAS RAÜL</title>
+
+
+    <style>
+        @font-face {
+            font-family: 'Valorant';
+            src: url('Valorant.ttf') format('truetype'); /* Reemplaza 'ruta/a/Valorant.ttf' con la ruta correcta de tu archivo */
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #1e1a1a; /* Color de texto predeterminado */
+            transition: color 0.3s ease; /* Agregado para la transición del color del texto */
+            font-family: 'Valorant', sans-serif;
+            font-size: 48px;
+            padding-top: 20px;
+        }
+        .animation_container {
+            position: relative;
+        }
+        .animation_container img {
+            max-height: 480px;
+        }
+
+        .btn1 {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 0;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+        a {
+            border-radius: 4px;
+            background-color: #ffc8dd;
+            margin: 15px;
+            padding: 15px;
+            padding-left: 20px;
+
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Valorant', sans-serif;
+            font-size: 30px;
+
+        }
+        a:nth-child(1) {
+            padding-right: 25px;
+        }
+        a:nth-child(10) {
+            padding-right: 20px;
+        }
+        div img {
+            scale: 190%;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+
+        .dark-mode-btn img {
+            content: url('sunny.png'); /* Cambiar al icono sunny.png en modo oscuro */
+        }
+
+        button img {
+            max-height: 32px; /* Tamaño máximo */
+        }
+
+        body.dark-mode {
+            background-color: #333; /* Color de fondo en modo oscuro */
+        }
+
+        .dark-mode h1 {
+            color: #fff; /* Color de texto en modo oscuro */
+        }
+        div{
+            background-color: transparent;
+            max-height: 600px;
+        }
+        .divbtn {
+            background-color: transparent;
+            padding: 40px;
+            margin-top: 40px;
+            z-index: 1000; /* Aplica un z-index alto */
+        }
+    </style>
+</head>
+<body>
+<h1>Mandala fet amb SVG</h1>
+<div class="animation_container">
+    <img src="Mandala2.svg" alt="Mi logo">
+</div>
+<button class="btn1 dark-mode-btn" onclick="toggleDarkMode()"><img src="moon.png" alt="Moon"></button>
+<div class="divbtn">
+    <!-- Agrega aquí tus botones -->
+    <a class="botones" href="Mandala.html">1</a>
+    <a class="botones" href="Mandala2.html"> 2 </a>
+    <a class="botones" href="Mandala3.html"> 3 </a>
+    <a class="botones" href="Mandala4.html"> 4 </a>
+    <a class="botones" href="Mandala5.html"> 5 </a>
+    <a class="botones" href="Mandala6.html"> 6 </a>
+</div>
+
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+</body>
+</html>
